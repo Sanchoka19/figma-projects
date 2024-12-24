@@ -9,6 +9,17 @@
     box-sizing: border-box;
 }
 
+.star {
+    width: 15.23px;
+    aspect-ratio: 1;
+    background: #F8CA00;
+    clip-path: polygon(50% 0,
+            calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
+            calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+            calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
+            calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))));
+}
+
 html,
 input,
 button {
@@ -191,6 +202,7 @@ header nav ul li img {
 .second-container-wrapper {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: 130px;
 }
 
@@ -231,17 +243,6 @@ header nav ul li img {
 .more-info h6 {
     font-size: 14px;
     color: #E58411;
-}
-
-.star {
-    width: 15.23px;
-    aspect-ratio: 1;
-    background: #F8CA00;
-    clip-path: polygon(50% 0,
-            calc(50%*(1 + sin(.4turn))) calc(50%*(1 - cos(.4turn))),
-            calc(50%*(1 - sin(.2turn))) calc(50%*(1 - cos(.2turn))),
-            calc(50%*(1 + sin(.2turn))) calc(50%*(1 - cos(.2turn))),
-            calc(50%*(1 - sin(.4turn))) calc(50%*(1 - cos(.4turn))));
 }
 
 
@@ -307,11 +308,9 @@ header nav ul li img {
     padding: 21px 27px;
     border-radius: 20px;
     background-color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
 }
-
-/* .third-container-content-box img{
-    margin-bottom: 20px;
-} */
 
 .third-container-content-box-info {
     margin-top: 47px;
@@ -393,9 +392,9 @@ header nav ul li img {
     display: flex;
     align-items: center;
     justify-content: center;
+
     margin-top: 306px;
     margin-bottom: 250px;
-    position: relative;
 }
 
 .fourth-container-wrapper {
@@ -406,7 +405,7 @@ header nav ul li img {
     position: relative;
 }
 
-.rec1{
+.rec1 {
     width: 495px;
     height: 422px;
     position: absolute;
@@ -416,7 +415,7 @@ header nav ul li img {
     border-radius: 20px;
 }
 
-.rec2{
+.rec2 {
     width: 495px;
     height: 301px;
     position: absolute;
@@ -426,7 +425,7 @@ header nav ul li img {
     border-radius: 20px;
 }
 
-.rec3{
+.rec3 {
     width: 555px;
     height: 423px;
     position: absolute;
@@ -456,14 +455,254 @@ header nav ul li img {
     line-height: 21.09px;
 }
 
-.fourth-container-content h2{
+.fourth-container-content h2 {
     font-size: 42px;
     line-height: 49.22px;
     width: 413px;
 }
 
-.fourth-container-content p{
+.fourth-container-content p {
     font-size: 18px;
     color: #1E1E1E;
     width: 556px;
+}
+
+/* fiveth container */
+
+.fiveth-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 170px;
+}
+
+.fiveth-container-wrapper {
+    display: flex;
+}
+
+.fiveth-container-content {
+    margin-left: 80px;
+    margin-right: 94px;
+    display: flex;
+    justify-content: center;
+
+    flex-direction: column;
+    gap: 20px;
+}
+
+.fiveth-container-content h5 {
+    color: rgba(229, 132, 17, 1);
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.fiveth-container-content h3 {
+    font-size: 42px;
+    line-height: 50px;
+    color: rgba(30, 30, 30, 1);
+}
+
+.fourth-container-content p {
+    font-size: 18px;
+    color-interpolation-filters: rgba(30, 30, 30, 1);
+    line-height: 33px;
+}
+
+.fiveth-conatiner-grid {
+    display: grid;
+    grid-template-areas:
+        "item1 . ."
+        "item1 item2 item2"
+        "item3 item2 item2"
+        "item3 item2 item2"
+        "item3 . .";
+
+    gap: 42px;
+}
+
+.item1 {
+    grid-area: item1;
+}
+
+.item2 {
+    grid-area: item2;
+}
+
+.item3 {
+    grid-area: item3;
+}
+
+
+/* sixth container */
+
+.sixth-container {
+    height: 860px;
+}
+
+.sixth-container-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    gap: 60px;
+}
+
+.sixth-container-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.sixth-container-header h4 {
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(229, 132, 17, 1);
+}
+
+.sixth-container-header h3 {
+    font-size: 42px;
+    line-height: 49px;
+    color: rgba(30, 30, 30, 1);
+}
+
+
+.sixth-container-content {
+    display: flex;
+    align-items: center;
+    gap: 39px;
+}
+
+.sixth-container-content-box {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+}
+
+.sixth-container-content-box-rec {
+    position: absolute;
+    bottom: 18px;
+
+    width: 334px;
+    height: 239px;
+
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sixth-container-content-box-rec img {
+    width: 60px;
+    height: 60px;
+
+    position: absolute;
+    top: -30px;
+    border-radius: 50%;
+    border: 10px solid rgba(255, 255, 255, 1);
+    object-fit: cover;
+
+}
+
+.sixth-container-content-box-rec h4 {
+    margin-top: 71px;
+}
+
+.sixth-container-content-box-rec p {
+    margin-top: 22px;
+    margin-bottom: 22px;
+    font-size: 14px;
+    line-height: 16px;
+    width: 252px;
+    text-align: center;
+}
+
+.sixth-container-box-star {
+    display: flex;
+    gap: 5px;
+}
+
+
+/* footer */
+
+footer {
+    height: 462px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 120px;
+}
+
+.footer-first-container {
+    height: 146px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 110px;
+
+    margin-top: 118px;
+}
+
+.footer-description {
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+    align-items: start;
+}
+
+.footer-description h5 {
+    color: rgba(30, 30, 30, 1);
+    font-size: 28px;
+    line-height: 32.81px;
+}
+
+.footer-description p {
+    font-size: 15px;
+    line-height: 24px;
+    color: rgba(30, 30, 30, 1);
+}
+
+.footer-first-container ul {
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+}
+
+.social-list li a {
+    display: flex;
+    gap: 10px;
+    color: rgba(30, 30, 30, 1);
+}
+
+.social-list img{
+    width: 20px;
+    height: 20px;
+}
+
+.list-footer-header {
+    color: rgba(246, 151, 63, 1);
+    font-size: 17px;
+    line-height: 22px;
+}
+
+.footer-second-container {
+    height: 24px;
+    display: flex;
+    align-items: center;
+    gap: 679px;
+    color: rgba(30, 40, 51, 0.716);
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.footer-second-container-terms {
+    display: flex;
+    gap: 49px;
 }
