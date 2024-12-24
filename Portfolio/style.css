@@ -1,0 +1,274 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 27px 60px;
+    height: 80px;
+}
+
+header nav ul {
+    display: flex;
+    gap: 33px;
+    font-size: 25px;
+}
+
+header nav ul li a {
+    color: #000;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+header nav ul li a:hover {
+    font-size: 30px;
+}
+
+
+.resume-container {
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.resume-container-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
+    width: 855px;
+    height: 314px;
+}
+
+.resume-container-info {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: start;
+
+    width: 506px;
+}
+
+.resume-container-info h1 {
+    font-weight: 1000;
+    font-size: 35px;
+}
+
+.resume-container-info button {
+    padding: 15px 20px;
+    border: none;
+    border-radius: 99px;
+
+    color: #fff;
+    background-color: #ff6464c6;
+    font-size: 20px;
+
+    transition: .5s ease;
+}
+
+.resume-container-info button:hover {
+    background-color: #00000075;
+    color: #000;
+}
+
+.resume-container img {
+    width: 250px;
+    height: 243px;
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.post-container {
+    height: 396px;
+
+    background-color: #EDF7FA;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 88px;
+}
+
+.post-container-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.post-container-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.post-container-content {
+    display: flex;
+    gap: 20px;
+}
+
+.post-container-header h4 {
+    font-size: 22px;
+}
+
+.post-container-header h5 {
+    font-size: 16px;
+    color: #00A8CC;
+}
+
+.post-container-content-items {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+
+    padding: 24px 27px;
+
+    width: 418px;
+
+    background-color: #fff;
+}
+
+.post-container-separator {
+    display: flex;
+    gap: 26px;
+}
+
+.post-container-separator span {
+    border: 1px solid black;
+}
+
+
+/*Work block*/
+
+.work-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 15px 148px 32px 146px;
+}
+
+.work-container-wrapper {
+    width: 858px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.work-container-wrapper h3{
+    font-size: 22px;
+    font-weight: 100;
+    color: #21243D;
+}
+
+.work-container-separator{
+    border: 1px solid #E0E0E0;
+}
+
+.work-container-items{
+    display: flex;
+    gap: 15px;
+}
+
+.work-container-items-content{
+    width: 594px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    font-size: 16px;
+}
+
+.work-container-items-content h5{
+    font-size: 25px;
+    color: #142850;
+    font-weight: 1000;
+}
+
+.work-container-items img{
+    width: 246px;
+    height: 180px;
+    border-radius: 6px;
+}
+
+.work-container-items-content-container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.work-container-items-content-container span{
+    padding: 2px 10px;
+    border-radius: 99px;
+    background-color: #142850;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 1000;
+}
+
+.work-container-items-content-container h6{
+    font-weight: 100;
+    color: #8695A4;
+}
+
+/*footer section*/
+
+footer{
+    height: 182px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.footer-social{
+    display: flex;
+    align-items: center;
+
+    gap: 35px;
+    height: 50px;
+}
+
+.footer-social img{
+    width: 30px;
+    height: 30px;
+    
+    transition: .5s ease;
+}
+
+.footer-social img:hover{
+    width: 40px;
+    height: 40px;
+}
+
+.footer-copyright{
+    font-size: 14px;
+    color: #142850;
+}
